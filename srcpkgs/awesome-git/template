@@ -1,0 +1,37 @@
+# Template file for 'awesome-git'
+pkgname=awesome-git
+version="4.4.dev"
+revision=1
+#archs="i686 x86_64"
+#make_dirs="/var/log/dir 0755 root root"
+maintainer="Thomas Leon Highbaugh <thighbaugh@zoho.com>"
+license="GPL-3.0-or-later"
+build_helper="qemu"
+wrksrc="awesome-master"
+configure_args="-DSYSCONFDIR=/etc"
+conf_files="/etc/xdg/awesome/rc.lua"
+hostmakedepends="cmake ruby-asciidoctor ImageMagick pkg-config xmlto"
+makedepends="lua53-devel lua53-lgi libxcb-devel pango-devel xcb-util-devel xcb-util-image-devel
+ xcb-util-keysyms-devel xcb-util-wm-devel xcb-util-cursor-devel
+ startup-notification-devel imlib2-devel libxdg-basedir-devel
+ gdk-pixbuf-devel dbus-devel libxkbcommon-devel xcb-util-xrm-devel"
+depends="dbus-x11 pango lua53-lgi>=0.7.2"
+short_desc="Highly configurable, next gen framework window manager for X"
+license="GPL-2.0-or-later"
+homepage="http://awesomewm.org"
+distfiles="https://github.com/awesomeWM/awesome/archive/refs/heads/master.tar.gz"
+checksum=e4fd920e1b23a4406cbd77bf2f4f4695e0f56d2147ae6dd462c207199a6bcce9
+
+do_install(){
+make
+make install
+vmove awesomerc.lua  etc/xdg/awesome/rc.lua
+}
+
+
+
+
+post_install() {
+
+vinstall awesome.desktop 644 usr/share/xsessions
+}
