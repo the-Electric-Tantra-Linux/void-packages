@@ -1,25 +1,26 @@
 # Template file for 'wine'
 pkgname=wine
-version=7.0
+version=7.2
 revision=1
 _pkgver=${version/r/-r}
 create_wrksrc=yes
 build_wrksrc=wine-${_pkgver}
 build_style=gnu-configure
-configure_args="--bindir=/usr/libexec/wine"
+configure_args="--bindir=/usr/libexec/wine $(vopt_with xshm)"
 short_desc="Run Microsoft Windows applications"
 maintainer="Helmut Pozimski <helmut@pozimski.eu>"
 license="LGPL-2.1-or-later"
 homepage="http://www.winehq.org/"
-distfiles="https://dl.winehq.org/wine/source/${version%r*}/wine-${_pkgver}.tar.xz
+distfiles="https://dl.winehq.org/wine/source/${version%.*}.x/wine-${_pkgver}.tar.xz
  https://github.com/wine-staging/wine-staging/archive/v${_pkgver}.tar.gz"
-checksum="5b43e27d5c085cb18f97394e46180310d5eef7c1d91c6895432a3889b2de086b
- ff5eb5d3ca17953b75a0b1792313e2402338905a03d8d8e6d5fad186a0644740"
+checksum="dfc641523c8dbc664168b6174441633d971275456bf67de2dcaa99c8daa5ee15
+ e6d19af5df9b8dea7422416fdd67e99768dfc37f287061d1d022eabc076b3be4"
 
-build_options="mingw staging"
-build_options_default="mingw"
+build_options="mingw staging xshm"
+build_options_default="mingw xshm"
 desc_option_mingw="Use the MinGW cross compiler to build WinPE DLLs"
 desc_option_staging="Apply the wine-staging patchset"
+desc_option_xshm="Enable support for the X Shared Memory Extension"
 
 lib32mode=full
 archs="i686* x86_64*"

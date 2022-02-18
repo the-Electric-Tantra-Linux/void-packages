@@ -1,6 +1,6 @@
 # Template file for 'yq-go'
 pkgname=yq-go
-version=4.17.2
+version=4.19.1
 revision=1
 wrksrc="yq-${version}"
 build_style=go
@@ -10,7 +10,7 @@ maintainer="Frank Steinborn <steinex@nognu.de>"
 license="MIT"
 homepage="https://github.com/mikefarah/yq"
 distfiles="https://github.com/mikefarah/yq/archive/v${version}.tar.gz"
-checksum=a1bd57ef70e9a8457b977de006d2904fdceae462eb548e8a89de8f1b1b727369
+checksum=c289cef82668722d1851fd4e70fd7bbfdbf5b6fd358d7bb01a9e06c317dafc58
 
 do_check() {
 	go test -v
