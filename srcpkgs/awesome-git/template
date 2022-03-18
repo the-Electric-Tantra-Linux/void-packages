@@ -20,7 +20,7 @@ short_desc="Highly configurable, next gen framework window manager for X"
 license="GPL-2.0-or-later"
 homepage="http://awesomewm.org"
 distfiles="https://github.com/awesomeWM/awesome/archive/refs/heads/master.tar.gz"
-checksum=e4fd920e1b23a4406cbd77bf2f4f4695e0f56d2147ae6dd462c207199a6bcce9
+checksum=c91118955ba957f2bb7b67336f124f0f7b70a8547e60f8edea04c1cf0526c27b
 
 do_install(){
 make
