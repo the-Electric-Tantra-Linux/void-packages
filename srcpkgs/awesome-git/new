@@ -1,14 +1,11 @@
-# Template file for 'awesome-git'
-pkgname=awesome-git
-version="4.4.dev"
-revision=1
-maintainer="Thomas Leon Highbaugh <thighbaugh@zoho.com>"
-license="GPL-2.0-or-later"
+# Template file for 'awesome'
+pkgname=awesome
+version=4.3
+revision=8
 build_style=cmake
 build_helper="qemu"
 configure_args="-DSYSCONFDIR=/etc"
 conf_files="/etc/xdg/awesome/rc.lua"
-wrksrc="awesome-master"
 hostmakedepends="ruby-asciidoctor ImageMagick pkg-config xmlto"
 makedepends="libxcb-devel pango-devel xcb-util-devel xcb-util-image-devel
  xcb-util-keysyms-devel xcb-util-wm-devel xcb-util-cursor-devel
@@ -16,11 +13,11 @@ makedepends="libxcb-devel pango-devel xcb-util-devel xcb-util-image-devel
  gdk-pixbuf-devel dbus-devel libxkbcommon-devel xcb-util-xrm-devel"
 depends="dbus-x11 pango"
 short_desc="Highly configurable, next gen framework window manager for X"
+maintainer="Orphaned <orphan@voidlinux.org>"
+license="GPL-2.0-or-later"
 homepage="http://awesomewm.org"
-distfiles="https://github.com/awesomeWM/awesome/archive/refs/heads/master.tar.gz"
-checksum=c91118955ba957f2bb7b67336f124f0f7b70a8547e60f8edea04c1cf0526c27b
-
-
+distfiles="https://github.com/awesomeWM/awesome/releases/download/v${version}/awesome-${version}.tar.xz"
+checksum=78264d6f012350b371e339127aca485260bc0aa935eff578ba75ce1a00e11753
 
 build_options="jit"
 desc_option_jit="Use LuaJIT to build Awesome"
@@ -57,4 +54,3 @@ pre_configure() {
 post_install() {
 	vinstall awesome.desktop 644 usr/share/xsessions
 }
-
