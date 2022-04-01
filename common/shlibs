@@ -421,7 +421,7 @@ libField3D.so.1.7 Field3D-1.7.3_1
 libMAC.so.6 libMAC-5.28_1
 libmad.so.0 libmad-0.15.1b_1
 libmatroska.so.7 libmatroska-1.6.0_1
-libmatrix_client.so.0.6.2 mtxclient-0.6.2_1
+libmatrix_client.so.0.7.0 mtxclient-0.7.0_1
 libebml.so.5 libebml-1.4.0_1
 libdvdread.so.8 libdvdread-6.1.1_1
 libdvdnav.so.4 libdvdnav-4.1.3_1
@@ -1133,6 +1133,7 @@ libibus-1.0.so.5 ibus-1.4.99.20120917_1
 libxapian.so.30 libxapian-1.4.0_1
 libzeitgeist-1.0.so.1 libzeitgeist-0.3.18_1
 libcolord-gtk.so.1 colord-gtk-0.1.23_1
+libcolord-gtk4.so.1 colord-gtk-0.3.0_1
 libgdm.so.1 libgdm-3.6.0_1
 libclutter-gst-2.0.so.0 clutter-gst-1.9.92_1
 libcheese.so.8 libcheese-3.17.90_1
@@ -1190,7 +1191,7 @@ libconfig.so.11 libconfig-1.7.1_1
 libopusfile.so.0 opusfile-0.12_2
 libopusurl.so.0 opusfile-0.12_2
 libopusenc.so.0 libopusenc-0.2_1
-libgranite.so.5 granite-0.5.0_1
+libgranite.so.6 granite-6.2.0_1
 libprotobuf-vala.so.0 libprotobuf-vala-0.1.0_1
 librlog.so.5 librlog-1.4_1
 libtinyxml.so.0 tinyxml-2.6.2_1
@@ -2956,6 +2957,7 @@ liblz.so.1 lzlib-1.8_1
 libelogind.so.0 libelogind-238.1_2
 libseat.so.1 libseat-0.3.0_1
 libnma.so.0 libnma-1.8.30_1
+libnma-gtk4.so.0 libnma-1.8.36_1
 libgspell-1.so.2 gspell-1.8.0_1
 libotf.so.1 libotf-0.9.16_1
 libimagequant.so.0 libimagequant-2.8.2_1
@@ -2983,7 +2985,7 @@ libmutter-cogl-9.so.0 mutter-41.0_1
 libmutter-cogl-pango-9.so.0 mutter-41.0_1
 libgeoclue-2.so.0 geoclue2-2.4.4_1
 libgepub.so.0 libgepub-0.4_1
-libslopy.so.7.5 slop-7.5_1
+libslopy.so.7.6 slop-7.6_1
 libbcunit.so.1 bcunit-3.0_1
 libzbar.so.0 libzbar-0.10_1
 libzbargtk.so.0 libzbar-0.10_1
@@ -3044,7 +3046,7 @@ libbctoolbox.so.1 bctoolbox-0.6.0_1
 libortp.so.15 ortp-4.4.0_1
 libsuperlu.so.5 superlu-5.2.1_1
 libgosu.so.0 gosu-0.12.0_1
-libyara.so.8 libyara-4.1.0_1
+libyara.so.9 libyara-4.2.0_1
 libyaz_icu.so.5 yaz-5.23.1_1
 libyaz.so.5 yaz-5.23.1_1
 libyaz_server.so.5 yaz-5.23.1_1
@@ -3524,8 +3526,8 @@ libadwaita-1.so.0 libadwaita-1.0.0alpha2_1
 libswitchboard-2.0.so.0 switchboard-2.3.2_1
 libcodecore.so.0 libio.elementary.code-3.0_1
 libio.elementary.music-core.so.0 libio.elementary.music-5.0_1
-libpantheon-files-core.so.4 libio.elementary.files-4.1.4_1
-libpantheon-files-widgets.so.4 libio.elementary.files-4.1.4_1
+libpantheon-files-core.so.6 libio.elementary.files-6.0.0_1
+libpantheon-files-widgets.so.6 libio.elementary.files-6.0.0_1
 libwlroots.so.9 wlroots0.14-0.14.1_1
 libwlroots.so.10 wlroots-0.15.0_1
 libbaseencode.so.1 libbaseencode-1.0.9_1
@@ -3897,7 +3899,7 @@ libcaribou.so.0 libcaribou-0.4.21_3
 libtinyclipboard.so.1 tinyclipboard-16.01_1
 libcbor.so.0.9 libcbor-0.9.0_1
 libfido2.so.1 libfido2-1.6.0_2
-libjanet.so.1.20 janet-1.20.0_1
+libjanet.so.1.21 janet-1.21.1_1
 libOpenImageDenoise.so.1 openimagedenoise-1.3.0_1
 libcbang0.so cbang-1.6.0_3
 libblosc.so.1 c-blosc-1.17.1_1
@@ -4142,3 +4144,4 @@ librz_util.so.0.3.4 rizin-0.3.4_1
 librz_lang.so.0.3.4 rizin-0.3.4_1
 librz_search.so.0.3.4 rizin-0.3.4_1
 librz_bin.so.0.3.4 rizin-0.3.4_1
+libaravis-0.8.so.0 libaravis-0.8.21_1
