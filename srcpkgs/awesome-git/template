@@ -18,7 +18,8 @@ depends="dbus-x11 pango"
 short_desc="Highly configurable, next gen framework window manager for X"
 homepage="http://awesomewm.org"
 distfiles="https://github.com/awesomeWM/awesome/archive/refs/heads/master.tar.gz"
-checksum=c91118955ba957f2bb7b67336f124f0f7b70a8547e60f8edea04c1cf0526c27b
+checksum=bc8bb923686ffc272a21680e1a9f46879b62f2bdf861517c3bd51297a023e9b0
+
 
 
 
