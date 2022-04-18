@@ -1,6 +1,9 @@
 name: Fetch Upstream
 
-on: pull_request
+on:
+  schedule:
+    - cron: '0 18 * * *'
+
 
 jobs:
   fetch-upstream:
